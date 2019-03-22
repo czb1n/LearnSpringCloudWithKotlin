@@ -6,6 +6,7 @@
     <modules>
         <module>eureka-server</module>
         <module>eureka-client</module>
+        <module>hystrix-client</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -45,7 +46,14 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-task</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

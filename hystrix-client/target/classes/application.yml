@@ -1,0 +1,12 @@
+server:
+  port: 6602
+
+spring:
+  application:
+    name: hystrix-client
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
