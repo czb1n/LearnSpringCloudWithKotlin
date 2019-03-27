@@ -8,6 +8,7 @@
         <module>eureka-client</module>
         <module>hystrix-client</module>
         <module>ribbon-client</module>
+        <module>zuul-server</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

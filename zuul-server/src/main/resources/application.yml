@@ -1,0 +1,28 @@
+server:
+  port: 6606
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6600/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: routes, filters
+
+zuul:
+  routes:
+    api:
+      path: /api/**
+      url: http://localhost:6603/
+    lbapi:
+      path: /lbapi/**
+      serviceId: ribbon-client
+
+spring:
+  application:
+    name: zuul-server
