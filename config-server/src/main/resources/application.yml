@@ -1,0 +1,21 @@
+server:
+  port: 6607
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6600/eureka/
+
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/czb1n/learn-spring-cloud-with-kotlin
+          search-paths: config-server
+          default-label: master
