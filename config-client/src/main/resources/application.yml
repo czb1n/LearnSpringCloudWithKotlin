@@ -1,0 +1,6 @@
+server:
+  port: 6608
+
+spring:
+  application:
+    name: config-client
