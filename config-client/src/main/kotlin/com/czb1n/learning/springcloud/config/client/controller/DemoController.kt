@@ -13,7 +13,7 @@ class DemoController {
     @Value("\${name}")
     var name: String? = null
 
-    @Value("\${name}")
+    @Value("\${version}")
     var version: String? = null
 
     @RequestMapping("/hello")
