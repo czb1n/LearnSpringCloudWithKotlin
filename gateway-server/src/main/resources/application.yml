@@ -1,0 +1,6 @@
+server:
+  port: 6609
+
+spring:
+  application:
+    name: gateway-server
