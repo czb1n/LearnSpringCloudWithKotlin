@@ -1,0 +1,11 @@
+server:
+  port: 6612
+
+spring:
+  application:
+    name: consul-ribbon-client
+
+  cloud:
+    consul:
+      host: localhost
+      port: 8500

@@ -12,6 +12,8 @@
         <module>config-server</module>
         <module>config-client</module>
         <module>gateway-server</module>
+        <module>consul-client</module>
+        <module>consul-ribbon-client</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
