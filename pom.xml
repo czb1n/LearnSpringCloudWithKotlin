@@ -14,6 +14,9 @@
         <module>gateway-server</module>
         <module>consul-client</module>
         <module>consul-ribbon-client</module>
+        <module>feign-provider</module>
+        <module>feign-customer</module>
+        <module>feign-common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

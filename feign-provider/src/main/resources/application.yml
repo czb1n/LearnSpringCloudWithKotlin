@@ -1,0 +1,14 @@
+server:
+  port: 6613
+
+spring:
+  application:
+    name: feign-provider
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+
+feign:
+  hystrix:
+    enabled: true
